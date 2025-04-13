@@ -1,0 +1,55 @@
+*bool isEmpty(){
+    return listSize==0;
+}
+void insert(int data,int position){
+    if(listSize==MAXSIZE){
+        cout<<"List is Full"<< endl;
+        return;
+    }
+    if(position<1||position>listSize+1){
+        cout<<"Invalid Position"<< endl;
+        return;
+    }
+    for(int i=listSize-1;i>=position-1;i--)
+    {
+        arr[i+1]=arr[i];
+    }
+    arr[position-1]=data;
+    listSize++;
+}
+void remove(int data){
+    int index=-1;
+    for(int i=0;i<listSize;i++){
+        if(arr[i]==data){
+            index=i;
+            break;
+        }
+    }
+    if(index!=-1){
+        for(int i=index;i<listSize-1;i++){
+            arr[i]=arr[i + 1];
+        }
+        listSize--;
+    }else{
+        cout<<"Data not found"<< endl ;
+    }
+}
+void search(int data){
+    for(int i=0;i<listSize;i++){
+        if(arr[i]==data){
+            cout<<"Data found at the position "<< i + 1 <<endl;
+            return;
+        }
+    }
+    cout<<"Data not found"<< endl;
+}
+void display(){
+    if(isEmpty()){
+        cout<<"List is Empty"<< endl;
+    }else{
+        for(int i=0;i<listSize; i++){
+            cout<<arr[i]<<" ";
+        }
+        cout<<endl;
+    }
+    }*

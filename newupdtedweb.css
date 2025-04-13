@@ -1,0 +1,101 @@
+body
+    {
+    font-family: cursive;
+    margin: 0;
+    }
+    .topheader
+    {
+        text-align:center;
+        background-color: chartreuse;
+        color: black;
+        padding: 10px;
+    }
+    .topheader:hover{
+        background-color: red;
+        color: white;
+    
+    }
+    .header {
+        border-radius: 10px;
+        padding: 40px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    }
+    .header:hover{
+        color: black;
+        background-color: white;
+    }
+    .navbar {
+    border-radius: 10px;
+    display: flex;
+    background-color: #333;
+    color: white;
+    }
+    .navbar:hover{
+        background-color: rgb(242, 242, 0);
+        color:rgb(9, 10, 8);
+        border-radius: 10px;
+    display: flex;
+    }
+    a{
+        border: rgb(17, 17, 17) dotted 1px;
+        border-radius: 2px;
+    }
+    .navbar a {
+    color: rgb(247, 248, 245);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    }
+    .navbar a:hover {
+    background-color: #f60a0a;
+    color:rgb(241, 248, 248);
+    border-radius: 10px;
+    }
+    .row {
+    display: flex;
+    flex-wrap: nowrap;
+    }
+    .side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    }
+    .side:hover{
+        background-color: rgb(181, 53, 231);
+    }
+    .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    }
+    .main:hover{
+        background-color: rgb(133, 42, 223);
+        color: aliceblue;
+    }
+    .fakeimg {
+    background: #aaa;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    }
+    .fakeimg:hover{
+        background-color: yellow;
+        color: black;
+    }
+    .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    }
+    .footer:hover{
+        background-color: black;
+        color: whitesmoke;
+    }
+    @media screen and (max-width: 700px) {
+    .row, .navbar {
+    flex-direction: column;
+    }
+    }
+    
